@@ -2,7 +2,7 @@
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=6
-KEYWORDS="~amd64 ~x86"
+KEYWORDS="~amd64"
 RESTRICT="mirror"
 
 SLOT="3"
@@ -10,7 +10,7 @@ SLOT="3"
 USE_DOTNET="net45"
 IUSE="+net45 developer debug nupkg gac doc"
 
-inherit mono-env gac nupkg mpt-r20150903
+inherit mono-env gac nupkg mpt-r20150903 versionator
 
 NAME="nunit-gui"
 HOMEPAGE="https://github.com/nunit/${NAME}"

@@ -2,7 +2,7 @@
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=6 # >=portage-2.2.25
-KEYWORDS="~amd64 ~x86"
+KEYWORDS="~amd64"
 RESTRICT="mirror"
 
 USE_DOTNET="net45"
@@ -17,7 +17,7 @@ IUSE="+${USE_DOTNET} debug +developer test +aot doc"
 
 TOOLS_VERSION=14.0
 
-inherit gac nupkg
+inherit gac nupkg versionator
 
 get_revision()
 {

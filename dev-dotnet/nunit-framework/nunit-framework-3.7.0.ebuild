@@ -3,14 +3,14 @@
 
 EAPI=6
 
-KEYWORDS="~amd64 ~x86"
+KEYWORDS="~amd64"
 RESTRICT="mirror"
 
 #USE_DOTNET="net20 net40 net45"
 USE_DOTNET="net45"
 IUSE="+net45 developer debug nupkg gac doc"
 
-inherit mono-env gac nupkg
+inherit mono-env gac nupkg versionator
 
 NAME="nunit"
 HOMEPAGE="https://github.com/nunit/${NAME}"

@@ -32,11 +32,8 @@ Finally add the following USE flags if relevant.
  - Fork & Contribute & Pull Request
  - Open requests on https://bugs.gentoo.org with solutions from this overlay
 
-Dotnet Core
------------
+.NET Core
+---------
 
-For using dotnet core see
-
- - [Dotnet Core Binary packages](Documentation/DotnetCore-Bin.md)
- - [Dotnet Core Source Build Notes](Documentation/DotnetCore-Src.md)
-
+The `dev-dotnet/dotnetcore-sdk-bin` package in this overlay is deprecated and will not be maintained.
+Please use the [dev-dotnet/dotnet-sdk-bin](https://packages.gentoo.org/packages/dev-dotnet/dotnet-sdk-bin) package that's already available upstream.

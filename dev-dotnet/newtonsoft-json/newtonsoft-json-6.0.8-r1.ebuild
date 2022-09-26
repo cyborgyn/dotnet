@@ -3,7 +3,7 @@
 
 EAPI=6
 
-KEYWORDS="~amd64 ~x86"
+KEYWORDS="~amd64"
 SLOT="0"
 RESTRICT="mirror"
 
@@ -17,7 +17,7 @@ USE_DOTNET="net45"
 # pkg-config = register in pkg-config database
 IUSE="${USE_DOTNET} debug developer +gac pkg-config nupkg test"
 
-inherit dotnet gac xbuild
+inherit dotnet gac xbuild versionator
 
 NAME="Newtonsoft.Json"
 HOMEPAGE="https://github.com/JamesNK/${NAME}"

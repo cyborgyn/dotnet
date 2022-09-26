@@ -2,7 +2,10 @@
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=6 # >=portage-2.2.25
-KEYWORDS="~amd64 ~x86"
+
+inherit versionator
+
+KEYWORDS="~amd64"
 
 USE_DOTNET="net45"
 # debug = debug configuration (symbols and defines for debugging)
@@ -13,7 +16,7 @@ USE_DOTNET="net45"
 # pkg-config = register in pkg-config database
 IUSE="${USE_DOTNET} debug test +developer +aot +nupkg +gac +pkg-config"
 
-inherit gac nupkg
+inherit gac nupkg versionator
 
 HOMEPAGE="https://github.com/mgrosperrin/commandlineparser/releases"
 DESCRIPTION="command line parser on System.ComponentModel.DataAnnotations"
